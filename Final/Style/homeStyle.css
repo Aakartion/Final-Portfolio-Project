@@ -13,7 +13,7 @@ body
 
 header
 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .upper
@@ -39,7 +39,7 @@ header
 #email
 {
     position: absolute;
-    color: rgb(163, 163, 163);
+    color: rgb(155, 155, 155);
     right: 60px;
 }
 
@@ -50,8 +50,7 @@ header
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid greenyellow;
-
+    background:rgb(34, 36, 37);
 }
 
 .nav-links li
@@ -68,8 +67,10 @@ header
     position: absolute;
     align-items: center;
     left: 50px;
+    /* background: rgb(109, 129, 37); */
+    background: linear-gradient(90deg, #42595c, #5f7e6e);
     padding-top: 10px;
-    border: 1px solid pink;
+    border-radius: 10px;
 }
 
 .nav-links a
@@ -81,16 +82,46 @@ header
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    border: 1px solid black;
-    padding: 5px;
+    color: rgb(255, 230, 230); 
+    padding: 10px;
     right: 50px;
 }
 
-.myImage img
+.nav-links a:hover
 {
-    border: 1px solid red;
-    width: 300px;
-    border-radius: 30em;
-    position: absolute;
+    background: rgb(50, 52, 53);
+    color: rgb(179,209,70);
+
 }
 
+.container
+{
+    background: linear-gradient(90deg, #22271C, #454A3C);
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.myImage
+{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid black; */
+    margin-right: 50px;
+}
+.myImage img
+{
+    width: 300px;
+    border-radius: 160px;    
+    position: relative;   
+}
+
+.content
+{
+    position: absolute;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    left: 50px;
+}
