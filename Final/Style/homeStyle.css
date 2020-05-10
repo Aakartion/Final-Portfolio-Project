@@ -11,10 +11,10 @@ body
     padding: 0px;
 }
 
-header
+/* header
 {
-    /* border: 1px solid red; */
-}
+    /* border: 1px solid red; 
+}*/
 
 .upper
 {
@@ -96,23 +96,25 @@ header
 
 .container
 {
-    background: linear-gradient(90deg, #22271C, #454A3C);
-    border: 1px solid blue;
+    background: linear-gradient(180deg, #DFDEDA, #8A83A5);
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
+    border: 1px solid darkred;
+    
 }
 
 .myImage
 {
     display: flex;
     justify-content: flex-end;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin-right: 50px;
 }
 .myImage img
 {
-    width: 300px;
+    width: 450px;
     border-radius: 160px;    
     position: relative;   
 }
@@ -121,7 +123,28 @@ header
 {
     position: absolute;
     border: 1px solid white;
-    display: flex;
-    align-items: center;
-    left: 50px;
+    display: flex;    
+    align-items: center;  
+    flex-direction: column; 
+    background-color: #DFDEDA;    
+    border-radius: 90px;
+    left: 150px;
+    width: 500px;
+    height: 400px;
+    transition: 0.2s ease-in-out;
+}
+
+.content span h1
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    border: 1px solid red;
+    position: relative;
+    color: #121113;
+}
+
+.content p
+{
+    border: 1px solid black;
+
 }
