@@ -104,15 +104,12 @@ body
     margin-right: 5%;
     margin-left: 5%;
     position: relative;
-    border: 3px solid green;
 }
 
 .myImage
 {
     position: relative;
     margin: auto;
-    flex: 1;;
-    border: 1px solid black;
 }
 
 .myImage img
@@ -125,7 +122,6 @@ body
 .content
 {
     position: relative;
-    border: 1px solid white;
     display: flex;    
     align-items: center;  
     justify-content: center;
@@ -151,7 +147,6 @@ body
 .content p
 {
     font-size: 20px;
-    border: 1px solid red;
     color: black;
     letter-spacing: 1px;
     text-align: center;
@@ -160,19 +155,6 @@ body
 
 .curve
 {
-    background: #ff3c00;
     color: beige;
     text-align: center;
-}
-
-.curve h1
-{
-    font-size: 6rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.curve p
-{
-    font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
