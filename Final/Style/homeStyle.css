@@ -7,14 +7,9 @@
 
 body
 {
-    margin: auto;
+    margin: 0 auto;
     padding: 0px;
 }
-
-/* header
-{
-    /* border: 1px solid red; 
-}*/
 
 .upper
 {
@@ -67,7 +62,6 @@ body
     position: absolute;
     align-items: center;
     left: 50px;
-    /* background: rgb(109, 129, 37); */
     background: linear-gradient(90deg, #42595c, #5f7e6e);
     padding-top: 10px;
     border-radius: 10px;
@@ -99,52 +93,86 @@ body
     background: linear-gradient(180deg, #DFDEDA, #8A83A5);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content:space-around;
+}
+
+.imgAndContent
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5%;
+    margin-left: 5%;
     position: relative;
-    border: 1px solid darkred;
-    
+    border: 3px solid green;
 }
 
 .myImage
 {
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
+    margin: auto;
+    flex: 1;;
     border: 1px solid black;
-    margin-right: 50px;
 }
+
 .myImage img
 {
-    width: 450px;
-    border-radius: 160px;    
-    position: relative;   
+    width: 350px;
+    border-radius: 150px;    
+    position: relative;      
 }
 
 .content
 {
-    position: absolute;
+    position: relative;
     border: 1px solid white;
     display: flex;    
     align-items: center;  
-    flex-direction: column; 
-    background-color: #DFDEDA;    
-    border-radius: 90px;
-    left: 150px;
-    width: 500px;
-    height: 400px;
-    transition: 0.2s ease-in-out;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 5%;
+    box-shadow: 10px 10px #888888;
+    background-color: #DFDEDA; 
+    border-radius: 20px;
+    transition: 0.2s;
 }
 
 .content span h1
 {
-    font-size: 50px;
+    font-size: 30px;
     text-transform: uppercase;
-    border: 1px solid red;
-    position: relative;
-    color: #121113;
+    color:#5D2A42;
+    transition: 0.2s;
+    text-shadow: 2px 2px 5px #3C3744;
 }
 
 .content p
 {
-    border: 1px solid black;
+    font-size: 20px;
+    border: 1px solid red;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+.curve
+{
+    background: #ff3c00;
+    color: beige;
+    text-align: center;
+}
+
+.curve h1
+{
+    font-size: 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.curve p
+{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
