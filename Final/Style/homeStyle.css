@@ -11,6 +11,16 @@ body
     padding: 0px;
 }
 
+.welcome-page
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../Images/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
 .upper
 {
     display: flex;
@@ -45,7 +55,7 @@ body
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background:rgb(34, 36, 37);
+    /* background:rgb(34, 36, 37); */
 }
 
 .nav-links li
@@ -76,9 +86,10 @@ body
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    color: rgb(255, 230, 230); 
+    /* color: rgb(255, 230, 230);  */
     padding: 10px;
     right: 50px;
+    color: black;
 }
 
 .nav-links a:hover
@@ -88,13 +99,22 @@ body
 
 }
 
+
 .container
 {
-    background: linear-gradient(180deg, #DFDEDA, #8A83A5);
+    /* background: linear-gradient(180deg, #DFDEDA, #8A83A5); */
     display: flex;
     align-items: center;
     justify-content:space-around;
 }
+
+#bgImage
+{
+    height: 100vh;
+    position: absolute;
+}
+
+
 
 .imgAndContent
 {
