@@ -11,7 +11,7 @@ body {
 
 .welcome-page {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background-image: url(../Images/bg.jpg);
 	background-attachment: fixed;
 	background-size: cover;
@@ -21,34 +21,36 @@ body {
 .upper {
 	display: flex;
 	position: relative;
-	background: #22271c;
+	top: 0;
+	background: #c4c4c4;
 	width: 100%;
-	height: 40px;
-	display: flex;
+	height: 25px;
 	justify-content: flex-end;
 	align-items: center;
-	opacity: 0.9;
 }
 
 #phoneNo {
-	color: rgb(255, 230, 230);
+	color: black;
 	margin-right: 275px;
 }
 
 #email {
 	position: absolute;
-	color: rgb(155, 155, 155);
+	color: #717171;
 	right: 60px;
 }
 
 .nav-links {
 	position: absolute;
-	top: 50px;
+	top: 25px;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	background: rgba(196, 196, 196, 0.5);
+
+	/* background: linear-gradient(90deg, rgb(216, 216, 216), rgb(107, 107, 107)); */
 }
 
 .nav-links li {
@@ -62,19 +64,20 @@ body {
 	width: 80px;
 	position: absolute;
 	align-items: center;
+	justify-content: center;
 	left: 50px;
-	background: linear-gradient(90deg, #42595c, #5f7e6e);
-	background: linear-gradient(90deg, rgb(216, 216, 216), rgb(107, 107, 107));
+	/* background: linear-gradient(90deg, #42595c, #5f7e6e); */
+	/* background: linear-gradient(90deg, rgb(216, 216, 216), rgb(107, 107, 107)); */
 	padding-top: 10px;
 	border-radius: 10px;
 }
 
 .nav-links a {
-	transition: all 0.3s ease 0s;
 	text-decoration: none;
 	letter-spacing: 2px;
-	font-size: 15px;
-	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 0.2em;
+	font-weight: bolder;
 	text-transform: uppercase;
 	position: relative;
 	padding: 10px;
@@ -83,72 +86,92 @@ body {
 }
 
 .nav-links a:hover {
-	color: white;
-	background: silver;
+	opacity: 0.5;
+	transition: 0.4s ease;
 }
 
 .container {
-	display: flex;
+	display: grid;
+	grid-template-columns: 100%;
+	justify-content: space-between;
 	position: absolute;
-	top: 150px;
-	align-items: center;
-	justify-content: space-around;
-	border: 1px solid red;
-	margin: auto 5%;
+	top: 105px;
+	height: 86vh;
 }
 
 .imgAndContent {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	margin-right: 5%;
-	margin-left: 5%;
-	position: relative;
-}
-
-.myImage {
-	position: relative;
-	border: 1px solid black;
-	border-radius: 50px;
-	display: flex;
-}
-
-.myImage img {
-	width: 350px;
-	border-radius: 150px;
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
 .content {
-	position: relative;
-	display: flex;
+	display: grid;
+	grid-template-rows: 50% 50%;
+	justify-content: space-around;
 	align-items: center;
-	justify-content: space-between;
-	flex-direction: column;
-	margin-left: 20%;
-	margin-right: 20%;
-	border-radius: 20px;
-	transition: 0.2s;
+	/* border: 1px solid black; */
 }
 
-.content span h1 {
-	font-size: 30px;
+#name {
+	display: grid;
+	justify-self: center;
+	width: 375px;
+	align-items: center;
+}
+
+#name h1 {
+	position: relative;
+	justify-self: center;
 	text-transform: uppercase;
-	color: #5d2a42;
-	transition: 0.2s;
-	text-shadow: 2px 2px 5px #3c3744;
-	font-family: 'Marck Script', cursive;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 42px;
+	letter-spacing: 0.2em;
+	align-self: center;
+	color: #716f6f;
 }
 
-.content p {
+#intro {
+	display: grid;
+	background: rgba(196, 196, 196, 0.1);
+	position: absolute;
+	bottom: 100px;
+	height: 300px;
+	width: 400px;
+	padding: 5px;
+	justify-self: center;
+	align-items: center;
+}
+#intro p {
+	position: relative;
+	justify-self: center;
+	align-self: center;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
 	font-size: 20px;
-	color: black;
-	letter-spacing: 1px;
+	line-height: 42px;
 	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
+	letter-spacing: 0.2em;
+	color: #000000;
 }
 
-.curve {
-	color: beige;
-	height: 100px;
-	width: 100%;
+.myImage {
+	display: grid;
+	/* background: linear-gradient(
+		135deg,
+		white,
+		white,
+		white,
+		rgba(196, 196, 196),
+		silver
+	); */
+}
+
+.myImage img {
+	justify-self: end;
+	width: 60%;
+	margin-right: 70px;
 }
